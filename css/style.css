@@ -16,56 +16,134 @@ body {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
-
+/* 
 #nav {
-  background-color: #fff;
-  display: flex;
+  width: 20%;
+  display: inline;
   justify-content: space-around;
   align-items: center;
-  min-height: 8vh;
+  height: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.nav-links {
+  /* background-color: rgb(221, 29, 29); */
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  /* margin-right: 10%;*/
+  padding-left: 2%;
 }
 
-#nav a:link,
-#nav a:visited,
-#nav a:active,
-ul,
 ul li {
-  color: white;
+  margin-right: 1%;
   text-decoration: none;
-
-  text-align: center;
+  display: inline;
+  padding: 11px 3px 11px 3px;
+  background-color: rgb(31, 18, 145);
+  /* border: 2px solid rgb(73, 61, 180); */
 }
 
+#nav a,
 #nav a:link,
 #nav a:visited,
 #nav a:active {
-  background-color: rgb(31, 18, 145);
+  color: white;
+  text-decoration: none;
+  display: inline;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
   padding: 5px;
-  border: 2px solid rgb(56, 45, 158);
+  background-color: rgb(31, 18, 145);
+  border: 2px solid rgb(243, 242, 255);
   display: inline-block;
+  width: 31%;
+  letter-spacing: 2px;
+}
+
+#nav a:hover {
+  color: rgb(253, 255, 242);
+  background-color: rgb(20, 10, 110);
+  border: 2px solid rgb(212, 209, 238);
+}
+.content {
+  align-items: center;
 }
 
 .footer {
   display: flex;
+  text-align: center;
+  letter-spacing: 1.5px;
+  line-height: 150%;
+  width: 100%;
 }
 
 #column1 {
-  width: 32%;
+  width: 30%;
   float: left;
 }
 
 #column2 {
-  width: 32%;
+  width: 40%;
   float: right;
 }
 
 #column3 {
-  width: 32%;
+  width: 30%;
   float: right;
   clear: both;
 }
 
+.open {
+  color: rgb(23, 202, 6);
+}
+
+.close {
+  color: rgb(190, 73, 4);
+}
+
 #copyright {
   width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    rgba(105, 49, 209, 0),
+    rgba(8, 10, 117, 0.75),
+    rgba(105, 49, 209, 0)
+  );
+}
+/* -------------------------- Styling index ------------------------ */
+.indexStyle {
+  text-align: center;
+  width: 90%;
+  word-wrap: break-word;
+  padding-left: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* -------------------------- Styling offert ------------------------ */
+.offert {
+  text-align: center;
+}
+
+.pictures {
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.stylePic {
+  width: 45%;
+  height: auto;
 }
