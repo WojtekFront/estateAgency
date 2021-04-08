@@ -1,8 +1,4 @@
 <?php
 include('companyInfo.php');
-include('offert.php');
-
-
-
-
+include('houses.php');
 ?>

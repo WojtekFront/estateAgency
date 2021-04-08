@@ -2,30 +2,28 @@
 define("title", "oferta||biuro nieruchomości");
 include("includes/header.php");
 ?>
-<div class="offert">
-<h1>Lorem ipsum dolor sit amet</h1>
-<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
-<br>
+<div class="offers">
+    <h1>Lorem ipsum dolor sit amet</h1>
+    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h3>
+    <br>
 </div>
 
+<ul class="offerList">
 
-<?php
-foreach ($offerts as $offert) {
-?>
-    <div class="offert">
-        <h2> miasto <?php echo $offert['city']; ?></h2>
-        <p class = "open"> cena za dobę <?php echo $offert['price']; ?> pln </p>
-        <div class="pictures">
-        <img src="img/<?php echo $offert['picture1']; ?>.jpg" alt="<?php echo $offert['city'] ?>" class="stylePic">
-        <img src="img/<?php echo $offert['picture2']; ?>.jpg" alt="<?php echo $offert['city'] ?>" class="stylePic">
-        </div><!-- pictures -->
-<p><?php echo $offert['describe']; ?></p>
+    <?php foreach ($offers as $offer => $item) {   ?>
 
-    <br><hr><br>
-    </div><!-- offert -->
-<?php
-}
-?>
+
+        <li><a href="offer.php?item=<?php echo $offer; ?>">
+                <div class="offerIn">
+                    <p><?php echo $item['city']; ?></p>
+
+                    <img src="img/<?php echo $item['picture1']; ?>.jpg" alt="<?php echo $item['city'] ?>" class="stylePic">
+                </div>
+            </a>
+        </li>
+    <?php } ?>
+</ul>
+<br>
 <?php
 include("includes/footer.php");
 ?>
